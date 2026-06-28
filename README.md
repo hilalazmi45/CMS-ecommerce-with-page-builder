@@ -157,6 +157,120 @@ database/
 
 ---
 
+## Project Stats
+
+| Item | Count |
+|---|---|
+| Widgets (drag & drop) | **67** |
+| Domain service classes | **32** |
+| Database migrations | **34** |
+| Automated tests | **51** |
+| Domain bounded contexts | **15** |
+
+---
+
+## All 67 Widgets
+
+**Layout**
+`SectionWidget` · `ContainerWidget` · `ColumnsWidget` · `SpacerWidget` · `DividerWidget`
+
+**Basic Content**
+`HeadingWidget` · `TextWidget` · `ImageWidget` · `ButtonWidget` · `VideoWidget` · `GoogleMapsWidget`
+
+**Advanced Content**
+`ImageBoxWidget` · `ImageCarouselWidget` · `ImageGalleryWidget` · `IconBoxWidget` · `IconListWidget` · `TestimonialWidget` · `CounterWidget` · `CountdownWidget` · `ProgressBarWidget` · `PriceListWidget` · `PriceTableWidget` · `StarRatingWidget` · `BlockquoteWidget` · `TabsWidget` · `AccordionWidget` · `ToggleWidget` · `AlertWidget` · `TableOfContentsWidget` · `AnimatedHeadlineWidget` · `FlipBoxWidget`
+
+**Marketing**
+`CallToActionWidget` · `BannerCarouselWidget` · `PromoBannerWidget` · `ShareButtonsWidget` · `SocialIconsWidget` · `AppDownloadWidget`
+
+**Commerce**
+`ProductGridWidget` · `ProductCardWidget` · `ProductGalleryWidget` · `ProductSummaryWidget` · `ProductTitleWidget` · `ProductPriceWidget` · `ProductRatingWidget` · `ProductTabsWidget` · `ProductTabsInfoWidget` · `ProductImageWidget` · `ProductCategoriesWidget` · `BrandShowcaseWidget` · `RelatedProductsWidget` · `AddToCartWidget` · `SearchWidget` · `PostsWidget`
+
+**Header / Footer**
+`HeaderTopBarWidget` · `HeaderLogoWidget` · `HeaderSearchWidget` · `HeaderCartWidget` · `HeaderAccountWidget` · `HeaderWishlistWidget` · `HeaderCompareWidget` · `HeaderIconLinkWidget` · `MainMenuWidget` · `NavMenuWidget` · `FooterColumnWidget` · `CopyrightWidget` · `PaymentIconsWidget`
+
+**Forms**
+`FormWidget`
+
+---
+
+## Domain Architecture
+
+15 bounded contexts under `app/Domain/`, each owning its own models, services, and value objects:
+
+```
+app/Domain/
+├── Cart           → CartService (guest + auth cart, coupon apply, merge on login)
+├── Catalogue      → ProductService, CategoryService, ReviewService
+├── Checkout       → Checkout coordination
+├── Cms            → CmsPageService (CMS pages + revisions)
+├── Customers      → Addresses, wishlist
+├── Inventory      → InventoryService (stock reservation, movement audit trail)
+├── Media          → MediaService, ImageVariantService
+├── Orders         → OrderPlacementService, OrderService, RefundService, TaxService
+├── PageBuilder    → BuilderService, ConditionResolver
+├── Payments       → PaymentGatewayManager, PaymentInitiationService + 5 gateways
+├── Pricing        → Money value object (integer minor units — no floating point)
+├── Promotions     → CouponService (BOGO, restrictions, atomic redemption)
+├── Shared         → IdempotencyService, ActivityLogger
+└── Shipping       → ShippingService (zone-based method resolution)
+```
+
+---
+
+## Payment Gateways
+
+| Gateway | Type | Market |
+|---|---|---|
+| Cash on Delivery | Direct | All |
+| Stripe | Client Intent (Payment Intents) | Global |
+| PayPal | Redirect (Orders API v2) | Global |
+| Billplz | Redirect (FPX) | Malaysia |
+| toyyibPay | Redirect (FPX) | Malaysia |
+
+All gateways are behind a typed `PaymentGateway` contract. Webhook endpoints verify provider signatures before processing. Secrets are never exposed to the browser.
+
+---
+
+## Security Model
+
+- Every admin action has a **Policy** and a **Form Request** with `authorize()`
+- Checkout totals are **100% server-calculated** — no frontend prices trusted
+- All money stored as **integer minor units** (no floating point rounding errors)
+- **Idempotency keys** prevent duplicate orders and double charges
+- Webhook endpoints verify **provider signatures** before processing
+- Builder HTML/CSS sanitized with allow-lists before persistence
+- Payment secrets loaded via `config()` only — never via `env()` in application code
+
+---
+
+## Full Dependency List
+
+### Backend (PHP)
+| Package | Version | Purpose |
+|---|---|---|
+| laravel/framework | ^12.0 | Core framework |
+| inertiajs/inertia-laravel | ^2.0 | Server-side Inertia adapter |
+| laravel/sanctum | ^4.0 | API authentication |
+| tightenco/ziggy | ^2.0 | Named Laravel routes in JS |
+
+### Frontend (JavaScript)
+| Package | Version | Purpose |
+|---|---|---|
+| react + react-dom | ^19.0 | UI framework |
+| @inertiajs/react | ^2.0 | Inertia React adapter |
+| @dnd-kit/core + sortable | ^6 / ^10 | Drag-and-drop builder canvas |
+| lucide-react | ^0.400 | Icon library (67 widget icons) |
+| zod | ^3.23 | Schema validation |
+| tailwindcss | ^4.0 | Utility-first CSS |
+| @headlessui/react | ^2.0 | Accessible UI primitives |
+| vite | ^7.0 | Build tool |
+| typescript | ^5.5 | Type safety (`strict: true`) |
+| vitest | ^4.0 | Unit testing |
+| @testing-library/react | ^16.0 | React component testing |
+
+---
+
 ## Development Commands
 
 ```bash
