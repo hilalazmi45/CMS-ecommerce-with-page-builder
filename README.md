@@ -1,59 +1,186 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# CMS E-Commerce with Page Builder
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A self-hosted visual commerce platform built with **Laravel 13**, **React 19**, and **Inertia.js** — combining a drag-and-drop storefront page builder (inspired by Elementor Pro) with a full WooCommerce-parity commerce engine.
 
-## About Laravel
+## What Is This?
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This is an all-in-one e-commerce platform where store owners can:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Design their storefront visually** — drag widgets onto a canvas, configure styles per device (desktop / tablet / mobile), and publish directly — no coding required.
+- **Run a complete online store** — manage products, variants, inventory, orders, coupons, shipping zones, customers, and reviews from a built-in admin panel.
+- **Build custom pages and theme templates** — headers, footers, product pages, category archives, and CMS pages all use the same visual builder.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Everything runs on a single Laravel application — no WordPress, no plugin runtime, no external CMS dependency.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## Tech Stack
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Layer | Technology |
+|---|---|
+| Backend | PHP 8.3 · Laravel 13 · Inertia.js v2 |
+| Frontend | React 19.2 · TypeScript 5 · Tailwind CSS 4 · Vite 7 |
+| Drag & Drop | @dnd-kit |
+| Testing | Pest (PHP) · Vitest (JS) |
+| Database | SQLite (dev) · MySQL (production) |
+| Queue / Cache | Sync / File (dev) · Redis (production) |
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Features
 
-### Premium Partners
+### Visual Page Builder
+- 65+ drag-and-drop widgets: layout, typography, media, commerce, forms, header/footer
+- Per-widget settings and responsive style overrides (desktop → tablet → mobile)
+- Undo / redo with bounded history
+- Revision history (last 20 auto-saves per document)
+- Drag-and-drop canvas with live preview
+- Device switcher (desktop / tablet / mobile breakpoints)
+- Layer tree panel, widget palette with categories
+- Builder powers: CMS pages, product category pages, brand pages, theme header/footer templates
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Theme Builder
+- Header and footer templates assignable via display conditions (entire site, specific page, category archive, product page, 404)
+- Single product templates and archive templates
+- Dynamic content tags (`{product.title}`, `{site.name}`, etc.)
 
-## Contributing
+### Commerce Engine
+- **Catalogue** — products with variations (size, colour, etc.), attributes, images, brands, categories
+- **Inventory** — stock management with movement audit trail, reservation on checkout
+- **Cart** — guest + authenticated cart, session merge on login, coupon application
+- **Checkout** — single-page multi-step checkout, idempotent order placement, duplicate-submission protection
+- **Orders** — order + payment status state machines, status history, admin notes, refunds
+- **Coupons** — percent / fixed / free shipping / BOGO, product/category restrictions, per-customer limits, min/max spend, expiry
+- **Shipping** — zone-based flat rate, free shipping (with min-order threshold), local pickup
+- **Payments** — Cash on Delivery, Stripe (Payment Intents), PayPal (Orders API v2), Billplz FPX, toyyibPay FPX
+- **Customers** — saved addresses, order history, wishlist, account dashboard
+- **Reviews** — verified-purchase reviews with admin moderation
+- **Tax** — configurable tax rates with compound/priority support
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Admin Panel
+- Full RBAC — roles, permissions, policies for every resource
+- Products, categories, brands, orders, customers, coupons, media, users, roles, settings, CMS pages, theme templates
+- Inventory management with inline stock adjustments
+- Order detail with status change, notes, and refund workflow
+- Media library with upload and management
+- Design system token editor (colours, typography, spacing presets)
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Getting Started
 
-## Security Vulnerabilities
+### Requirements
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- PHP 8.3+
+- Composer
+- Node.js 20+
+- SQLite (dev) or MySQL 8+ (production)
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/hilalazmi45/CMS-ecommerce-with-page-builder.git
+cd CMS-ecommerce-with-page-builder
+
+# 2. Install dependencies
+composer install
+npm install
+
+# 3. Set up environment
+cp .env.example .env
+php artisan key:generate
+
+# 4. Run migrations and seed demo data
+php artisan migrate --seed
+
+# 5. Link storage
+php artisan storage:link
+```
+
+### Development
+
+```bash
+# Start all servers (Laravel + Queue + Vite) concurrently
+composer dev
+
+# Or individually:
+php artisan serve
+npm run dev
+```
+
+Visit `http://localhost:8000`. Admin panel is at `/admin`.
+
+Default super-admin credentials are set by `SuperAdminUserSeeder` — check `database/seeders/SuperAdminUserSeeder.php`.
+
+---
+
+## Environment Variables
+
+Copy `.env.example` to `.env` and configure:
+
+```dotenv
+APP_URL=http://localhost:8000
+DB_CONNECTION=sqlite          # or mysql for production
+
+# Mail
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_FROM_ADDRESS=hello@example.com
+
+# Stripe
+STRIPE_PUBLIC_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+
+# PayPal
+PAYPAL_CLIENT_ID=
+PAYPAL_SECRET=
+PAYPAL_SANDBOX=true
+
+# Billplz (Malaysian FPX)
+BILLPLZ_API_KEY=
+BILLPLZ_COLLECTION_ID=
+
+# toyyibPay
+TOYYIBPAY_USER_SECRET_KEY=
+TOYYIBPAY_CATEGORY_CODE=
+```
+
+---
+
+## Project Structure
+
+```
+app/
+  Domain/           ← Business logic (Cart, Catalogue, Orders, Payments, Shipping, …)
+  Http/Controllers/ ← Admin + Storefront controllers (thin — delegate to Domain)
+resources/
+  js/
+    pageBuilder/    ← Widget registry, builder state hook, renderer
+    Pages/          ← React pages (Admin + Storefront)
+    Layouts/        ← AdminLayout, StorefrontLayout
+database/
+  migrations/       ← All schema migrations
+  seeders/          ← Demo data including theme templates and products
+```
+
+---
+
+## Development Commands
+
+```bash
+composer test           # Run PHP tests (Pest)
+npm run test:unit       # Run JS unit tests (Vitest)
+npx tsc --noEmit        # TypeScript type check
+npm run lint            # ESLint
+npm run build           # Production build
+./vendor/bin/pint       # PHP code formatting
+./vendor/bin/phpstan analyse  # Static analysis
+```
+
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is proprietary software. All rights reserved.
