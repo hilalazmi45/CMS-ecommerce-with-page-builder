@@ -1,16 +1,6 @@
 # CMS E-Commerce with Page Builder
 
-A self-hosted visual commerce platform built with **Laravel 13**, **React 19**, and **Inertia.js** — combining a drag-and-drop storefront page builder (inspired by Elementor Pro) with a full WooCommerce-parity commerce engine.
-
-## What Is This?
-
-This is an all-in-one e-commerce platform where store owners can:
-
-- **Design their storefront visually** — drag widgets onto a canvas, configure styles per device (desktop / tablet / mobile), and publish directly — no coding required.
-- **Run a complete online store** — manage products, variants, inventory, orders, coupons, shipping zones, customers, and reviews from a built-in admin panel.
-- **Build custom pages and theme templates** — headers, footers, product pages, category archives, and CMS pages all use the same visual builder.
-
-Everything runs on a single Laravel application — no WordPress, no plugin runtime, no external CMS dependency.
+This project was built to overcome the core limitations of running an e-commerce store on WordPress — where performance degrades as plugins stack up, Elementor Pro's visual builder and WooCommerce extensions each require separate paid subscriptions, and the entire stack becomes bloated, slow, and expensive to maintain at scale. Instead of patching together a dozen third-party plugins with recurring licence fees, this platform reimplements the same visual page-building experience and full commerce feature set as a single, self-hosted **Laravel 13 + React 19 + Inertia.js** application — giving complete ownership of the codebase, no subscription lock-in, and a significantly lighter and faster architecture.
 
 ---
 
