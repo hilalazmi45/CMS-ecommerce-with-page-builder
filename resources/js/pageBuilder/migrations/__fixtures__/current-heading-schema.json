@@ -1,0 +1,35 @@
+{
+    "schemaVersion": 1,
+    "components": [
+        {
+            "id": "heading-1",
+            "type": "heading",
+            "version": 1,
+            "settings": { "text": "Welcome", "level": "h1" },
+            "styles": { "desktop": {} }
+        },
+        {
+            "id": "section-1",
+            "type": "section",
+            "version": 2,
+            "settings": {
+                "columnTemplate": "1fr",
+                "vAlign": "flex-start",
+                "overlayColor": "#000000",
+                "overlayOpacity": "0",
+                "_tag": "section",
+                "_sticky": "false"
+            },
+            "styles": { "desktop": {} },
+            "children": [
+                {
+                    "id": "text-1",
+                    "type": "text",
+                    "version": 1,
+                    "settings": { "content": "Hello world" },
+                    "styles": { "desktop": {} }
+                }
+            ]
+        }
+    ]
+}

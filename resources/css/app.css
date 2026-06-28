@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+@import './animations.css';
+
+@source '../js/**/*.{ts,tsx}';
+@source '../../resources/views/**/*.blade.php';
+
+/* ─── Sticky header (C5) ─────────────────────────────────────────────────────
+ *
+ * The `.storefront-header` element sits in the normal flow via `position:sticky`.
+ * When the sentinel sentinel scrolls out of view, the `useStickyHeader` hook
+ * adds `is-sticky` to the element. We use a box-shadow to give visual depth
+ * without a layout shift (box-shadow does not affect geometry).
+ *
+ * `@media (prefers-reduced-motion: reduce)` disables the shadow transition for
+ * users who prefer less motion.
+ * ─────────────────────────────────────────────────────────────────────────── */
+
+.storefront-header {
+    background-color: #fff;
+}
+
+.storefront-header.is-sticky {
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 0.10);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .storefront-header {
+        transition: none;
+    }
+}

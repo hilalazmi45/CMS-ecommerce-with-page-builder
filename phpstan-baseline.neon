@@ -1,0 +1,787 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method App\\Domain\\Cart\\Models\\Cart\:\:items\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cart/Models/Cart.php
+
+		-
+			message: '#^Method App\\Domain\\Cart\\Models\\Cart\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cart/Models/Cart.php
+
+		-
+			message: '#^Method App\\Domain\\Cart\\Models\\CartItem\:\:cart\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cart/Models/CartItem.php
+
+		-
+			message: '#^Method App\\Domain\\Cart\\Models\\CartItem\:\:product\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cart/Models/CartItem.php
+
+		-
+			message: '#^Method App\\Domain\\Cart\\Models\\CartItem\:\:variation\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cart/Models/CartItem.php
+
+		-
+			message: '#^Access to an undefined property App\\Domain\\Catalogue\\Models\\Product\:\:\$sale_price_from\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domain/Catalogue/Models/Product.php
+
+		-
+			message: '#^Access to an undefined property App\\Domain\\Catalogue\\Models\\Product\:\:\$sale_price_to\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domain/Catalogue/Models/Product.php
+
+		-
+			message: '#^Class App\\Domain\\Catalogue\\Models\\Product uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/Product.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\Product\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domain/Catalogue/Models/Product.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\Product\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Domain/Catalogue/Models/Product.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\Product\:\:scopeFeatured\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domain/Catalogue/Models/Product.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\Product\:\:scopeFeatured\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Domain/Catalogue/Models/Product.php
+
+		-
+			message: '#^Class App\\Domain\\Catalogue\\Models\\ProductAttribute uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductAttribute.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductAttribute\:\:values\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductAttribute.php
+
+		-
+			message: '#^Class App\\Domain\\Catalogue\\Models\\ProductAttributeValue uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductAttributeValue.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductAttributeValue\:\:attribute\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductAttributeValue.php
+
+		-
+			message: '#^Class App\\Domain\\Catalogue\\Models\\ProductBrand uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductBrand.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductBrand\:\:builderContentOrDefault\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductBrand.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductBrand\:\:builderRevisions\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\MorphMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductBrand.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductBrand\:\:emptyBuilderSchema\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductBrand.php
+
+		-
+			message: '#^Class App\\Domain\\Catalogue\\Models\\ProductCategory uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductCategory.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductCategory\:\:builderContentOrDefault\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductCategory.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductCategory\:\:builderRevisions\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\MorphMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductCategory.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductCategory\:\:emptyBuilderSchema\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductCategory.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductImage\:\:media\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductImage.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductImage\:\:product\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductImage.php
+
+		-
+			message: '#^Class App\\Domain\\Catalogue\\Models\\ProductVariation uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductVariation.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Models\\ProductVariation\:\:product\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Models/ProductVariation.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Services\\CategoryService\:\:all\(\) return type with generic class Illuminate\\Database\\Eloquent\\Collection does not specify its types\: TKey, TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Services/CategoryService.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Services\\CategoryService\:\:create\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Services/CategoryService.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Services\\CategoryService\:\:flat\(\) return type with generic class Illuminate\\Database\\Eloquent\\Collection does not specify its types\: TKey, TModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Services/CategoryService.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Services\\CategoryService\:\:update\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Services/CategoryService.php
+
+		-
+			message: '#^Parameter \#1 \$attributes of static method Illuminate\\Database\\Eloquent\\Builder\<App\\Domain\\Catalogue\\Models\\ProductCategory\>\:\:create\(\) expects array\<model property of App\\Domain\\Catalogue\\Models\\ProductCategory, mixed\>, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Domain/Catalogue/Services/CategoryService.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Services\\ProductService\:\:create\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Services/ProductService.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Services\\ProductService\:\:paginate\(\) has parameter \$filters with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Services/ProductService.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Services\\ProductService\:\:paginate\(\) return type with generic class Illuminate\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Catalogue/Services/ProductService.php
+
+		-
+			message: '#^Method App\\Domain\\Catalogue\\Services\\ProductService\:\:update\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Catalogue/Services/ProductService.php
+
+		-
+			message: '#^Parameter \#1 \$attributes of method Illuminate\\Database\\Eloquent\\Model\:\:update\(\) expects array\<model property of App\\Domain\\Catalogue\\Models\\ProductVariation, mixed\>, array\<string, mixed\> given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Domain/Catalogue/Services/ProductService.php
+
+		-
+			message: '#^Parameter \#1 \$attributes of method Illuminate\\Database\\Eloquent\\Relations\\HasOneOrMany\<App\\Domain\\Catalogue\\Models\\ProductVariation,App\\Domain\\Catalogue\\Models\\Product,Illuminate\\Database\\Eloquent\\Collection\<int, App\\Domain\\Catalogue\\Models\\ProductVariation\>\>\:\:create\(\) expects array\<model property of App\\Domain\\Catalogue\\Models\\ProductVariation, mixed\>, array\<string, mixed\> given\.$#'
+			identifier: argument.type
+			count: 2
+			path: app/Domain/Catalogue/Services/ProductService.php
+
+		-
+			message: '#^Parameter \#1 \$attributes of static method Illuminate\\Database\\Eloquent\\Builder\<App\\Domain\\Catalogue\\Models\\Product\>\:\:create\(\) expects array\<model property of App\\Domain\\Catalogue\\Models\\Product, mixed\>, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Domain/Catalogue/Services/ProductService.php
+
+		-
+			message: '#^Class App\\Domain\\Cms\\Models\\CmsPage uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPage\:\:builderContentOrDefault\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPage\:\:builderRevisions\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\MorphMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPage\:\:createdBy\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPage\:\:emptyBuilderSchema\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPage\:\:latestRevision\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasOne does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPage\:\:revisions\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPage\:\:scopePublished\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPage\:\:scopePublished\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Domain/Cms/Models/CmsPage.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPageRevision\:\:createdBy\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cms/Models/CmsPageRevision.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Models\\CmsPageRevision\:\:page\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cms/Models/CmsPageRevision.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Services\\CmsPageService\:\:create\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Cms/Services/CmsPageService.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Services\\CmsPageService\:\:paginate\(\) has parameter \$filters with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Cms/Services/CmsPageService.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Services\\CmsPageService\:\:paginate\(\) return type with generic class Illuminate\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Cms/Services/CmsPageService.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Services\\CmsPageService\:\:publish\(\) has parameter \$content with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Cms/Services/CmsPageService.php
+
+		-
+			message: '#^Method App\\Domain\\Cms\\Services\\CmsPageService\:\:update\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Cms/Services/CmsPageService.php
+
+		-
+			message: '#^Parameter \#1 \$attributes of static method Illuminate\\Database\\Eloquent\\Builder\<App\\Domain\\Cms\\Models\\CmsPage\>\:\:create\(\) expects array\<model property of App\\Domain\\Cms\\Models\\CmsPage, mixed\>, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Domain/Cms/Services/CmsPageService.php
+
+		-
+			message: '#^Method App\\Domain\\Customers\\Models\\CustomerAddress\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Customers/Models/CustomerAddress.php
+
+		-
+			message: '#^Method App\\Domain\\Inventory\\Models\\InventoryMovement\:\:createdBy\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Inventory/Models/InventoryMovement.php
+
+		-
+			message: '#^Method App\\Domain\\Inventory\\Models\\InventoryMovement\:\:product\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Inventory/Models/InventoryMovement.php
+
+		-
+			message: '#^Method App\\Domain\\Inventory\\Models\\InventoryMovement\:\:reference\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\MorphTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Inventory/Models/InventoryMovement.php
+
+		-
+			message: '#^Method App\\Domain\\Inventory\\Models\\InventoryMovement\:\:variation\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Inventory/Models/InventoryMovement.php
+
+		-
+			message: '#^Method App\\Domain\\Inventory\\Services\\InventoryService\:\:paginateStock\(\) return type with generic class Illuminate\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Inventory/Services/InventoryService.php
+
+		-
+			message: '#^Class App\\Domain\\Orders\\Models\\Order uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/Order.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\Order\:\:billingAddress\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasOne does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/Order.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\Order\:\:customer\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/Order.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\Order\:\:scopePending\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domain/Orders/Models/Order.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\Order\:\:scopePending\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Domain/Orders/Models/Order.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\Order\:\:scopeProcessing\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domain/Orders/Models/Order.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\Order\:\:scopeProcessing\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Domain/Orders/Models/Order.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\Order\:\:shippingAddress\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasOne does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/Order.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\OrderAddress\:\:order\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/OrderAddress.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\OrderItem\:\:order\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/OrderItem.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\OrderItem\:\:product\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/OrderItem.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\OrderItem\:\:variation\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/OrderItem.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\OrderStatusHistory\:\:createdBy\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/OrderStatusHistory.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Models\\OrderStatusHistory\:\:order\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Models/OrderStatusHistory.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Services\\OrderService\:\:paginate\(\) has parameter \$filters with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Orders/Services/OrderService.php
+
+		-
+			message: '#^Method App\\Domain\\Orders\\Services\\OrderService\:\:paginate\(\) return type with generic class Illuminate\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Orders/Services/OrderService.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\BuilderRevision\:\:createdBy\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/PageBuilder/Models/BuilderRevision.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\BuilderRevision\:\:owner\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\MorphTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/PageBuilder/Models/BuilderRevision.php
+
+		-
+			message: '#^Class App\\Models\\Media not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: app/Domain/PageBuilder/Models/PageBuilderTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\PageBuilderTemplate\:\:createdBy\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/PageBuilder/Models/PageBuilderTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\PageBuilderTemplate\:\:previewImage\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/PageBuilder/Models/PageBuilderTemplate.php
+
+		-
+			message: '#^Parameter \#1 \$related of method Illuminate\\Database\\Eloquent\\Model\:\:belongsTo\(\) expects class\-string\<Illuminate\\Database\\Eloquent\\Model\>, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Domain/PageBuilder/Models/PageBuilderTemplate.php
+
+		-
+			message: '#^Unable to resolve the template type TRelatedModel in call to method Illuminate\\Database\\Eloquent\\Model\:\:belongsTo\(\)$#'
+			identifier: argument.templateType
+			count: 1
+			path: app/Domain/PageBuilder/Models/PageBuilderTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\ThemeTemplate\:\:builderContentOrDefault\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/PageBuilder/Models/ThemeTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\ThemeTemplate\:\:builderRevisions\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\MorphMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/PageBuilder/Models/ThemeTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\ThemeTemplate\:\:createdBy\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/PageBuilder/Models/ThemeTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\ThemeTemplate\:\:emptyBuilderSchema\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/PageBuilder/Models/ThemeTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\ThemeTemplate\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domain/PageBuilder/Models/ThemeTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\ThemeTemplate\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Domain/PageBuilder/Models/ThemeTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\ThemeTemplate\:\:scopeOfType\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domain/PageBuilder/Models/ThemeTemplate.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Models\\ThemeTemplate\:\:scopeOfType\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Domain/PageBuilder/Models/ThemeTemplate.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$published_at\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domain/PageBuilder/Services/BuilderService.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$status\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Domain/PageBuilder/Services/BuilderService.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:builderRevisions\(\)\.$#'
+			identifier: method.notFound
+			count: 4
+			path: app/Domain/PageBuilder/Services/BuilderService.php
+
+		-
+			message: '#^Method App\\Domain\\PageBuilder\\Services\\BuilderService\:\:save\(\) has parameter \$content with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/PageBuilder/Services/BuilderService.php
+
+		-
+			message: '#^Method App\\Domain\\Payments\\Models\\PaymentTransaction\:\:order\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Payments/Models/PaymentTransaction.php
+
+		-
+			message: '#^Class App\\Domain\\Promotions\\Models\\Coupon uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Promotions/Models/Coupon.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Models\\Coupon\:\:createdBy\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Promotions/Models/Coupon.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Models\\Coupon\:\:scopeActive\(\) has no return type specified\.$#'
+			identifier: missingType.return
+			count: 1
+			path: app/Domain/Promotions/Models/Coupon.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Models\\Coupon\:\:scopeActive\(\) has parameter \$query with no type specified\.$#'
+			identifier: missingType.parameter
+			count: 1
+			path: app/Domain/Promotions/Models/Coupon.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Models\\Coupon\:\:usages\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Promotions/Models/Coupon.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Models\\CouponUsage\:\:coupon\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Promotions/Models/CouponUsage.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Models\\CouponUsage\:\:user\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Promotions/Models/CouponUsage.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Services\\CouponService\:\:create\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Promotions/Services/CouponService.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Services\\CouponService\:\:paginate\(\) has parameter \$filters with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Promotions/Services/CouponService.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Services\\CouponService\:\:paginate\(\) return type with generic class Illuminate\\Pagination\\LengthAwarePaginator does not specify its types\: TKey, TValue$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Promotions/Services/CouponService.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Services\\CouponService\:\:update\(\) has parameter \$data with no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Promotions/Services/CouponService.php
+
+		-
+			message: '#^Method App\\Domain\\Promotions\\Services\\CouponService\:\:validate\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: app/Domain/Promotions/Services/CouponService.php
+
+		-
+			message: '#^Parameter \#1 \$attributes of static method Illuminate\\Database\\Eloquent\\Builder\<App\\Domain\\Promotions\\Models\\Coupon\>\:\:create\(\) expects array\<model property of App\\Domain\\Promotions\\Models\\Coupon, mixed\>, array given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Domain/Promotions/Services/CouponService.php
+
+		-
+			message: '#^Method App\\Domain\\Shipping\\Models\\ShippingZone\:\:methods\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\HasMany does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Shipping/Models/ShippingZone.php
+
+		-
+			message: '#^Method App\\Domain\\Shipping\\Models\\ShippingZoneMethod\:\:zone\(\) return type with generic class Illuminate\\Database\\Eloquent\\Relations\\BelongsTo does not specify its types\: TRelatedModel, TDeclaringModel$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Domain/Shipping/Models/ShippingZoneMethod.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$name\.$#'
+			identifier: property.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/BuilderController.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$ulid\.$#'
+			identifier: property.notFound
+			count: 4
+			path: app/Http/Controllers/Admin/BuilderController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:builderContentOrDefault\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/BuilderController.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Model\:\:builderTitle\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: app/Http/Controllers/Admin/BuilderController.php
+
+		-
+			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Domain\\PageBuilder\\Models\\BuilderRevision\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: argument.unresolvableType
+			count: 1
+			path: app/Http/Controllers/Admin/BuilderController.php
+
+		-
+			message: '#^Return type of call to method Illuminate\\Database\\Eloquent\\Collection\<int,App\\Domain\\PageBuilder\\Models\\BuilderRevision\>\:\:map\(\) contains unresolvable type\.$#'
+			identifier: method.unresolvableReturnType
+			count: 1
+			path: app/Http/Controllers/Admin/BuilderController.php
+
+		-
+			message: '#^Parameter \#1 \$user of class Illuminate\\Auth\\Events\\Verified constructor expects Illuminate\\Contracts\\Auth\\MustVerifyEmail, App\\Models\\User\|null given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Controllers/Auth/VerifyEmailController.php
+
+		-
+			message: '#^Parameter \#1 \$value of static method Illuminate\\Support\\Str\:\:lower\(\) expects string, Illuminate\\Support\\Stringable given\.$#'
+			identifier: argument.type
+			count: 1
+			path: app/Http/Requests/Auth/LoginRequest.php
+
+		-
+			message: '#^Property App\\Models\\ActivityLog\:\:\$created_at \(string\) does not accept Illuminate\\Support\\Carbon\.$#'
+			identifier: assign.propertyType
+			count: 1
+			path: app/Models/ActivityLog.php
+
+		-
+			message: '#^Class App\\Models\\Permission uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Models/Permission.php
+
+		-
+			message: '#^Class App\\Models\\Role uses generic trait Illuminate\\Database\\Eloquent\\Factories\\HasFactory but does not specify its types\: TFactory$#'
+			identifier: missingType.generics
+			count: 1
+			path: app/Models/Role.php
+
+		-
+			message: '#^Using nullsafe property access "\?\-\>value" on left side of \?\? is unnecessary\. Use \-\> instead\.$#'
+			identifier: nullsafe.neverNull
+			count: 1
+			path: app/Models/Setting.php
+
+		-
+			message: '#^Return type \(array\<string, mixed\>\) of method Database\\Factories\\PermissionFactory\:\:definition\(\) should be compatible with return type \(array\<model property of App\\Models\\Permission, mixed\>\) of method Illuminate\\Database\\Eloquent\\Factories\\Factory\<App\\Models\\Permission\>\:\:definition\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: database/factories/PermissionFactory.php
+
+		-
+			message: '#^Return type \(array\<string, mixed\>\) of method Database\\Factories\\RoleFactory\:\:definition\(\) should be compatible with return type \(array\<model property of App\\Models\\Role, mixed\>\) of method Illuminate\\Database\\Eloquent\\Factories\\Factory\<App\\Models\\Role\>\:\:definition\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: database/factories/RoleFactory.php
+
+		-
+			message: '#^Return type \(array\<string, mixed\>\) of method Database\\Factories\\UserFactory\:\:definition\(\) should be compatible with return type \(array\<model property of App\\Models\\User, mixed\>\) of method Illuminate\\Database\\Eloquent\\Factories\\Factory\<App\\Models\\User\>\:\:definition\(\)$#'
+			identifier: method.childReturnType
+			count: 1
+			path: database/factories/UserFactory.php
+
+		-
+			message: '#^Offset ''categories'' on array\{name\: ''Apple iPad Pro 12\.9…'', slug\: ''apple\-ipad\-pro\-12…'', sku\: ''APL\-IPP12\-M2'', type\: ''simple'', status\: ''active'', regular_price\: 669900, sale_price\: null, is_featured\: false, \.\.\.\}\|array\{name\: ''Apple iPhone 15 Pro…'', slug\: ''apple\-iphone\-15\-pro…'', sku\: ''APL\-IP15PM\-256'', type\: ''simple'', status\: ''active'', regular_price\: 549900, sale_price\: 499900, is_featured\: true, \.\.\.\}\|array\{name\: ''Apple MacBook Pro…'', slug\: ''apple\-macbook\-pro…'', sku\: ''APL\-MBP14\-M3'', type\: ''simple'', status\: ''active'', regular_price\: 849900, sale_price\: null, is_featured\: true, \.\.\.\}\|array\{name\: ''Panasonic 2\-Door…'', slug\: ''panasonic\-inverter…'', sku\: ''PAN\-RF420\-INV'', type\: ''simple'', status\: ''active'', regular_price\: 329900, sale_price\: 299900, is_featured\: false, \.\.\.\}\|array\{name\: ''Panasonic Front…'', slug\: ''panasonic\-front…'', sku\: ''PAN\-WM10\-FL'', type\: ''simple'', status\: ''active'', regular_price\: 249900, sale_price\: null, is_featured\: false, \.\.\.\}\|array\{name\: ''Panasonic Inverter…'', slug\: ''panasonic\-inverter…'', sku\: ''PAN\-AC15\-INV'', type\: ''simple'', status\: ''active'', regular_price\: 189900, sale_price\: 169900, is_featured\: false, \.\.\.\}\|array\{name\: ''Samsung 65" Neo…'', slug\: ''samsung\-65\-neo\-qled…'', sku\: ''SAM\-TV65\-8K'', type\: ''simple'', status\: ''active'', regular_price\: 1299900, sale_price\: 1099900, is_featured\: true, \.\.\.\}\|array\{name\: ''Samsung Galaxy S24…'', slug\: ''samsung\-galaxy\-s24…'', sku\: ''SAM\-GS24U\-512'', type\: ''simple'', status\: ''active'', regular_price\: 529900, sale_price\: 479900, is_featured\: true, \.\.\.\}\|array\{name\: ''Samsung Galaxy Tab…'', slug\: ''samsung\-galaxy\-tab…'', sku\: ''SAM\-TS9U\-256'', type\: ''simple'', status\: ''active'', regular_price\: 449900, sale_price\: 399900, is_featured\: false, \.\.\.\}\|array\{name\: ''Samsung Galaxy…'', slug\: ''samsung\-galaxy…'', sku\: ''SAM\-GB4P360\-14'', type\: ''simple'', status\: ''active'', regular_price\: 699900, sale_price\: 649900, is_featured\: true, \.\.\.\}\|array\{name\: ''Sony Bravia XR A95L…'', slug\: ''sony\-bravia\-xr\-a95l…'', sku\: ''SNY\-TVA95L\-55'', type\: ''simple'', status\: ''active'', regular_price\: 999900, sale_price\: 899900, is_featured\: true, \.\.\.\}\|array\{name\: ''Sony WH\-1000XM5…'', slug\: ''sony\-wh\-1000xm5'', sku\: ''SNY\-WH1000XM5'', type\: ''simple'', status\: ''active'', regular_price\: 169900, sale_price\: 149900, is_featured\: true, \.\.\.\} on left side of \?\? always exists and is not nullable\.$#'
+			identifier: nullCoalesce.offset
+			count: 1
+			path: database/seeders/StorefrontDemoSeeder.php
+
+		-
+			message: '#^Variable \$categories in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 1
+			path: database/seeders/StorefrontDemoSeeder.php
